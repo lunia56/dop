@@ -11,11 +11,12 @@ type getType = {
 }
 
 function App() {
-    const [get, setGet] = useState([])
+    const [get, setGet] = useState<Array<getType>>([])
 
     const getRequestHandler = () => {
         setGet([])
     }
+
 
 
     useEffect(()=>{
